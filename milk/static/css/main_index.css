@@ -1,0 +1,36 @@
+/* Сброс отступов и высоты */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  /* Контейнер, который занимает всю высоту экрана */
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh; /* Минимальная высота равна высоте экрана */
+  }
+  
+  /* Header закреплен вверху */
+  nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Основное содержимое растягивается, чтобы занять оставшееся пространство */
+  main {
+    flex: 1; /* Растягивается на всё доступное пространство */
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  /* Footer закреплен внизу */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
